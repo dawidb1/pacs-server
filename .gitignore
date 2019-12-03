@@ -9,6 +9,11 @@ nupkg/
 # Visual Studio Code
 .vscode
 
+# Frontend
+pacs-server/ClientApp/
+/ClientApp/
+ClientApp/
+
 # Rider
 .idea
 
@@ -36,3 +41,4 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+pacs-server/Properties/launchSettings.json

@@ -1,14 +1,19 @@
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace pacs_server.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
+        [HttpGet("[action]")]
+        public Boolean Test()
+        {
+            return true;
+        }
+
         private static string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
